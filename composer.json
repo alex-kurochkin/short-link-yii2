@@ -1,5 +1,5 @@
 {
-    "name": "short-yii2",
+    "name": "app/short-yii2",
     "description": "Short Links Application built on Yii2 Framework",
     "type": "project",
     "keywords": ["yii2", "short-links", "url-shortener"],
