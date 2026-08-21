@@ -1,0 +1,10 @@
+# Yii2 Apache .htaccess for web root
+
+RewriteEngine On
+
+# If a directory or file exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise forward to index.php
+RewriteRule . index.php

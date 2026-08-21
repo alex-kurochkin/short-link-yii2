@@ -1,0 +1,49 @@
+{
+    "name": "short-yii2",
+    "description": "Short Links Application built on Yii2 Framework",
+    "type": "project",
+    "keywords": ["yii2", "short-links", "url-shortener"],
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "yiisoft/yii2": "~2.0.50",
+        "yiisoft/yii2-bootstrap5": "^2.0",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "^2.1",
+        "yiisoft/yii2-gii": "^2.2",
+        "yiisoft/yii2-faker": "^2.0",
+        "phpunit/phpunit": "^9.6",
+        "codeception/codeception": "^5.1",
+        "codeception/module-asserts": "^3.0",
+        "codeception/module-yii2": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": ""
+        }
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@generateMigrationClassMap"
+        ],
+        "post-update-cmd": [
+            "@generateMigrationClassMap"
+        ],
+        "generateMigrationClassMap": [
+            "php -r \"file_exists('config/console.php') || exit(0); require 'vendor/autoload.php';\""
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

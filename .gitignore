@@ -1,0 +1,39 @@
+# Yii2 Framework
+/runtime/
+/vendor/
+
+# Environment files
+.env
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/logs/
+
+# Database (SQLite)
+database.sqlite
+*.sqlite
+
+# Tests
+/tests/_output/
+/tests/_support/_generated/
+
+# Composer
+composer.phar
+
+# Node modules (if using frontend assets)
+/node_modules/
+
+# Build artifacts
+/web/assets/
